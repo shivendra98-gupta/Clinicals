@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/clinicals.css' %}">    
+    <title> Clinical Data Creation</title>
+</head>
+<body>
+    <h2>Patient Details</h2>
+    First Name:{{patient.firstname}}
+    Last Name:{{patient.lastname}}
+    Age :{{patient.age}}
+    <h2> Patient clinical Data</h2>
+    <form method="post">
+        <table border="2">
+            {{form.as_table}}
+            {% csrf_token %}
+        </table>
+        <br/>
+        <input type="submit" type="Save"/>
+    </form>
+</body>

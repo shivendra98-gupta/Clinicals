@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/clinicals.css' %}"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="gradient">
+    <h2> Delete Patient {{patient.firstname}}</h2> <!--ke ess firstname naam ke patient ko delete kare ya nhi-->
+    <form method="post">
+        <input type="submit" value="Confirm/">
+        <a href=""> Cancel</a>  <!--HREF="" ye khali isliye rakha kyo ki after deletion ye aap ko uss page pe leh jaaye ga jha url.py meh "" yeh likha hai-->
+        {% csrf_token %}
+    </form>
+</body>

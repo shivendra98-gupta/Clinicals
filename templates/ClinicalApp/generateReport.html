@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/clinicals.css' %}">
+    <title>
+        Clinical data report
+    </title>
+</head>
+<body class="bodytag">
+    <h1>Clinical Data Report</h1>
+    <table border="2">
+        <tr>
+            <th>Component Name</th>
+            <th>Component Value</th>
+            <th>Measure date time</th>
+        </tr>
+        {% for eachentry in data %} <!--data  vo joh views.py meh line 53 likhe hai wahaa-->
+        <tr>
+            <td>{{eachentry.componentname}}</td>
+            <td>{{eachentry.componentvalue}}</td>
+            <td>{{eachentry.measureddatatime}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button class="but" >
+    <a style="text-decoration:none" href="/"><b>Home</a>
+    </button>
+</body>

@@ -1,0 +1,130 @@
+
+/* STATIC FOLDER MEH CSS JS IMAGES SABH AAYE GA....STATIC FOLDER KO SETTINGS.PY MEH REGISTER KAR DENA.......FRR JS KO HTML FILE MEH <A HREF=....> LIKH DENA*/
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+
+td,th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #e1a3f7;}
+tr:nth-child(odd){background-color:#a29bfe;}
+
+tr:hover {background-color: #ddd;}
+
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*button {
+  background-color: #4CAF50;  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}*/
+dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.bodytag
+{
+  background-image:url('static/download.jpeg');
+  background-repeat:no-repeat;
+  background-color: bisque;
+  animation:change 10s linear infinite;
+}
+@keyframes change {
+0%{
+  background-color:#009688;
+}
+20%{
+  background-color:#2196f3;
+}
+40%{
+  background-color:yellowgreen;
+}
+60%{
+  background-color:#f97355;
+}
+80%{
+  background-color:bisque;
+}
+100%{
+  background-color:#009688;
+}
+}
+.but{
+  margin-top: 3px;
+  background: linear-gradient(45deg,#cf7f6c,#78e08f,#f5f2ec);
+  box-shadow: 0 0 10px cyan, 0 0 25px cyan;
+}
+.but:hover
+{
+  box-shadow: 0 0 5px cyan,  0 10px 50px rgb(43, 230, 230), 0 8px 100px rgb(43, 230, 230);
+  margin-left: 20px;
+  transform: scale(1.2);
+}
+#bg
+{
+  background-repeat:no-repeat;
+  background-size: 1600px 700px;
+  background-attachment: fixed;
+  background-position: center;
+  /*filter: blur(2px); */
+  -moz-background-size: cover;
+}
+/*    @media (min-width:600px) {
+  #bg
+  {
+    background-color: #a29bfe;
+    
+  }
+}
+*/
+.gradient
+{
+  
+  background-image: linear-gradient(red, yellow);
+  background-repeat: no-repeat;
+  margin-left: 90px;
+  margin-top: 40px;
+  width: 100%;
+    height:1200px;
+}
+/*.parent
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/

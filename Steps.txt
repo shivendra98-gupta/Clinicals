@@ -1,0 +1,90 @@
+Open Aws and go to services
+
+select -> EC2
+
+Click on Launch Instances
+
+select 
+Amazon Linux2 AMI 
+
+Choose an Instance type
+Leave it as it is...
+
+now Click on Configure Instance Details
+
+
+Now click on Add Storage
+
+leave it as it is 
+
+
+Click on Configure Security Group
+
+Review and Launch
+
+Create a new key-pair.
+
+Provide any name
+
+Dont forget to Download Key-Pair
+
+
+now finally click on launch instances
+
+click on Instance id,it will show the status
+
+if it is in running mode, give it a name like "Django Server"
+
+
+select the instance, and click on connect
+
+
+
+Now download MobaXterm for windows
+(Portable Edition)
+
+Unzip the folder and install the Application
+
+after installing MobaExterm
+
+click on session -> SSH
+
+copy the public ipv4 dns and copy it from amazon instances
+
+and paste it into Mobaxterm Remote Host.
+
+click on Advanced SSH settings
+
+use private key and browse to the downloaded key.
+
+click ok
+
+
+now type ec2-user in console and hit enter
+
+type sudo -i 
+you will become the super user
+
+clear
+
+now copy the commands from steps.txt to install database
+
+um list mariad*
+yum install mariadb105-server.x86_64
+
+systemctl enable mariadb
+
+systemctl start mariadb
+
+mysql_secure_installation
+
+mysql -uroot  -p
+
+create database clinicalsdb;
+
+hit control+d for coming out.
+
+
+
+
+
